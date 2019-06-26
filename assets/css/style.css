@@ -1,0 +1,58 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    
+  }
+  
+  #end-page {
+    display: none;
+  }
+  
+  #main-logo {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 100% \9;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  
+  #end-page p {
+    font-size: 20px;
+    /* font-weight: 700; */
+  }
+  
+  #correct-answers {
+    margin-top: 32px;
+  }
+  
+  #question {
+    margin-top: 32px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  footer {
+    height: 30px;
+    margin-top: 30px;
+  }
+  
+  #copyright-small {
+    font-size: 12px;
+  }
+  
+  #timer {
+    margin-top: 20px;
+  }
+  
+  #done-button {
+    margin-top: 20px;
+  }
+  
