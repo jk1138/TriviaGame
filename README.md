@@ -1,74 +1,13 @@
-# TriviaGame
-In this assignment, You'll create a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be sure to layout this app with valid HTML and stylish CSS.
+# Bob's Burgers Trivia Game
+In this assignment I created a Trivia game to test a users knowledge on the fox hit tv show Bob Burgers.  This game is a multiple choice trivia game where the user gets an answer bank of three possible solutions. 
 
-### Before You Begin
+You can play online at https://jk1138.github.io/TriviaGame/.
 
-1. Create a GitHub repo called `TriviaGame`, then clone the repo to your computer.
-
-2. Create a file inside of the `TriviaGame` folder called `index.html`. This is where you'll mark up all of your HTML.
-3. Don't forget to include a script tag with the jQuery library.
-
-4. Create a folder inside of the `TriviaGame` folder called `assets`.
-5. Inside `assets`, create three folders: `css`, `javascript`, `images`
-
-* In your `css` folder, create a `style.css` file.
-* In your `javascript` folder, create an `app.js` file; here you'll write all of your JavaScript and jQuery.
-* In your `images` folder, save whatever images you'd like to use in this exercise.
-
-6. Choose a game to build from your options below. 
-
-### Option One: Basic Quiz (Timed Form)
-
-![Basic](Images/1-basic.jpg)
-
-**[Click Here to Watch the Demo](https://youtu.be/fBIj8YsA9dk)**.
-
-* You'll create a trivia form with multiple choice or true/false options (your choice).
-
-* The player will have a limited amount of time to finish the quiz. 
-
-* The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
-
-* Don't let the player pick more than one answer per question.
-
-* Don't forget to include a countdown timer.
+Game rules
+When click the start button you will be given 10 multiple choice questions ( in the future I hope to add additional questions) covering different questions about the likes and dislikes of the characters on the show. The client has 90 seconds to answer all the questions before time runs out but otherwise, once you are done completing the quiz you can just click "done". At the end of the game the clients score will be displayed in the browser pages. The score will consist of answered correctly, incorrectly, and incomplete. 
 
 
+What was used:
+This Trivia game was created by using JavaScript for the logic and jQuery to manipulate HTML. I also used HTML and CSS along with Bootstrap to help create a fun and dynamic html page. 
 
-### Reminder: Submission on BCS
 
-* Please submit both the deployed Github.io link to your homework AND the link to the Github Repository!
-
-- - -
-
-### Minimum Requirements
-
-Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed. Adding a README.md as well as adding this homework to your portfolio are required as well and more information can be found below.
-
-- - -
-
-### Create a README.md
-
-Add a `README.md` to your repository describing the project. Here are some resources for creating your `README.md`. Here are some resources to help you along the way:
-
-* [About READMEs](https://help.github.com/articles/about-readmes/)
-
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-
-- - -
-
-### Add To Your Portfolio
-
-After completing the homework please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. To receive an 'A' on any assignment, you must link to it from your portfolio.
-
-- - -
-
-### A Few Last Notes
-
-* Styling and theme are completely up to you. Get creative!
-
-* Remember to deploy your assignment to Github Pages.
-
-*If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
-
-**Good Luck!**
