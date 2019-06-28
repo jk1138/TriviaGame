@@ -1,3 +1,4 @@
+//we are making sure the page doen't run until it is ready 
 $(document).ready(function(){
 
   // start the game when user clicks on Start button
@@ -5,13 +6,13 @@ $(document).ready(function(){
 
 });
 
-// information about the state of game play
+// we are creating a variable to see the state of the game
 var gameState = {
 
-  // set the time at 90 seconds, and count down by 1 second
+  // now we are setting the timer to 90 seconds
   timeRemaining : 90,
 
-  // start the timer, hide the start page, show the questions
+  // Create a function so when we start the timer it hides the start page and shows the questions
   startTimer: function() {
     $("#timer").text("Time remaining: " + gameState.timeRemaining);
     setInterval(gameState.countdown, 1000);
@@ -19,7 +20,7 @@ var gameState = {
     trivia.displayQuestions();
   },
 
-  // decrement the timer and update the UI; stop the timer at 0
+  // Create a function that decreases the time and and when the time stops game ends.
   countdown: function() {
     gameState.timeRemaining--;
     $("#timer").text("Time remaining: " + gameState.timeRemaining);
@@ -29,13 +30,13 @@ var gameState = {
     }
   },
 
-  // stop the timer and check the answers
+  // when time is stopped we check the answers 
   stopTimer: function() {
     clearInterval();
     trivia.checkAnswers();
   },
 
-  // hide the quetions and display the end page with results
+  // Now we move onto the result/end page--> hide the quetions and show the results
   showEndPage: function(numCorrect, numIncorrect, numUnanswered) {
     $("#end-page").show();
     $("#questions-box").empty();
@@ -47,17 +48,14 @@ var gameState = {
   }
 }
 
-// functions to handle the building questions page and scoring
+// Create a function to to build the question page from the question bank and determine what is the correct answer
 var trivia = {
-
-  // pull questions from the array of questions, loop through them, and append to UI
   displayQuestions: function() {
     var divContainer = $("#questions-box");
     var answerGroup = $(".form-check");
     divContainer.append('<h2>Answer the following questions:</h2>');
             
     for (var i = 0; i < questionBank.length; i++) {
-
       divContainer.append('<div id="question">' + questionBank[i].question + '</div>');
 
       var answer1 = questionBank[i].answers[0];
@@ -69,7 +67,7 @@ var trivia = {
       divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group'+i+'" id="radio'+i+'"><label class="form-check-label" id="radio'+i+'label" for="radio'+i+'">' + answer3 + '</label></div>');
     }
 
-    // add a Done button to the end of the page and register its click handler
+    // done button with click event that registers the games state
     var doneButton = '<button class="btn btn-primary" id="done-button" type="submit">Done</button>';
     divContainer.append(doneButton);
     $("#done-button").on("click", gameState.stopTimer);
@@ -83,12 +81,12 @@ var trivia = {
     var numIncorrect = 0;
     var numUnanswered = 0;
 
-    // loop through to compare the text of the label with the user answers
-    // increment score counts appropriately
+    // for loop  so i can see how many of the radiolabels match to the users choice
+    // 
     for (var i = 0; i < questionBank.length; i++) {
       correctAnswer = questionBank[i].correct;
       userAnswer = $('input[id=radio'+i+']:checked + label').text();
-
+      //tally information  with ++ for correct, unanswered and incorrect
       if (userAnswer === correctAnswer) {
         numCorrect++;
       } else if (userAnswer === "") {
@@ -100,12 +98,12 @@ var trivia = {
       }
     }
 
-    // show the end page with the score tally
+    // Results page
     gameState.showEndPage(numCorrect, numIncorrect, numUnanswered);
   },
 }
 
-// array of objects with the questions, possible answers, and the correct answer
+// array was created for the variable questionBank. I created questions, possible answers, and the correct answers--> all of these become objects
 var questionBank =
 [
   {

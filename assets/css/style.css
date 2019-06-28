@@ -1,58 +1,10 @@
+/**************************** Body and Footer ********************************/
 body {
   background-image: url("../images/background.jpg");
   background-repeat: repeat;
   background-size: 100%;
-  margin: 0 auto;
-  
+  margin: 0 auto; 
 }
-
-
-#main-logo {
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-#questions-box{
-    background-color: rgba(255, 255, 255, 0.947);
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-label {
-  font-size: 16px;
-}
-
-#end-page {
-  display: none;
-  font-size: 20px;
-  background-color: rgba(255, 255, 255, 0.947);
-  margin-bottom:60px;
-}
-
-#correct-answers {
-  margin-top: 32px;
-}
-
-#question {
-  margin-top: 32px;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-#timer {
-  margin-top: 20px;
-}
-#start-button {
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-#done-button {
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
 .footer {
   background: rgba(128, 128, 128, 0.454);
   color: black;
@@ -62,5 +14,53 @@ label {
   height:40px;
   left: 0 ; right: 0; bottom: 0; 
   padding: 1rem;
-  }
-  
+}
+/**************************** Top Heading of the Page (doesnt change) ******************************/
+#main-logo {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+
+/******************************* Questionnaire ***************************************/
+#questions-box{
+    background-color: rgba(255, 255, 255, 0.947);
+}
+/* radio-label,answer key */
+label { 
+  font-size: 16px;
+} 
+#question {
+  margin-top: 32px;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* timer will go underneath image */
+#timer {  
+  margin-top: 20px;
+}
+/********************************* Results ***********************************************/
+#end-page {
+  display: none;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.947);
+  margin-bottom:60px;
+}
+#correct-answers {
+  margin-top: 32px;
+}
+
+
+
+/************************************** Buttons ****************************************/
+#start-button {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#done-button {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
